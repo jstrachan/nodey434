@@ -39,9 +39,8 @@ canary:
       requestDuration:
         threshold: 1000
         interval: "1m"
-  # The host is using Istio Gateway and is currently not auto-generated
-  # Please overwrite the `canary.host` in `values.yaml` in each environment repository (e.g., staging, production)
-  host: acme.com
+  # The host is using Istio Gateway 
+  host: ""
 
 service:
   name: nodey434

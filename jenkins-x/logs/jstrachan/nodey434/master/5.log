@@ -1,41 +1,124 @@
 
-Showing logs for build [32mmeta-jstrachan-nodey434-master-jfbgh-5[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-gd2tg[0m
-{"level":"warn","ts":1584475303.110507,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1584475303.1112013,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mjstrachan-nodey434-master-xp5nt-5[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-vzlw7[0m
+{"level":"warn","ts":1584475331.3240824,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584475331.3246264,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mmeta-jstrachan-nodey434-master-jfbgh-5[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-66k6m[0m
-{"level":"warn","ts":1584475303.841524,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1584475303.843553,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mjstrachan-nodey434-master-xp5nt-5[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-bbks5[0m
+{"level":"warn","ts":1584475332.3230863,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1584475332.324476,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mmeta-jstrachan-nodey434-master-jfbgh-5[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mjstrachan-nodey434-master-xp5nt-5[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mmeta-jstrachan-nodey434-master-jfbgh-5[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-jstrachan-nodey434-master-jfbgh-5j2zk[0m
-{"level":"warn","ts":1584475309.0049694,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1584475310.0943587,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/nodey434.git @ efb4d80adf20985ff823b3b93d382c5c3a3dfce4 in path /workspace/source"}
+Showing logs for build [32mjstrachan-nodey434-master-xp5nt-5[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-nodey434-master-xp5nt-95pq9[0m
+{"level":"warn","ts":1584475339.5253775,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584475340.6077979,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/nodey434.git @ v0.0.8 in path /workspace/source"}
 
-Showing logs for build [32mmeta-jstrachan-nodey434-master-jfbgh-5[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Showing logs for build [32mjstrachan-nodey434-master-xp5nt-5[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:efb4d80adf20985ff823b3b93d382c5c3a3dfce4
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mmeta-jstrachan-nodey434-master-jfbgh-5[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
-SKIP merge-pull-refs: Nothing to merge
+Showing logs for build [32mjstrachan-nodey434-master-xp5nt-5[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
 
-Showing logs for build [32mmeta-jstrachan-nodey434-master-jfbgh-5[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
-Effective pipeline written to jenkins-x-effective.yml
+Showing logs for build [32mjstrachan-nodey434-master-xp5nt-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+Command "credential" is deprecated, it will be removed on Jun 1 2020.  This is replaced by Tekton's mounted secrets
+WARNING: failed to find Secret npm-token in namespace **
 
-Showing logs for build [32mmeta-jstrachan-nodey434-master-jfbgh-5[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
-running command: echo \$(**-release-version) > VERSION
+Showing logs for build [32mjstrachan-nodey434-master-xp5nt-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN REPLACE_ME@1.0.0 No repository field.
+npm WARN REPLACE_ME@1.0.0 No license field.
 
-running command: ** step tag --version \$(cat VERSION)
-Updating chart version in charts/nodey434/Chart.yaml to 0.0.8
-Updating repository in charts/nodey434/values.yaml to gcr.io/*********-multicluster/nodey434
-Updating tag in charts/nodey434/values.yaml to 0.0.8
-error: Have you set up a git credential helper? See https://help.github.com/articles/caching-your-github-password-in-git/
-: git output: To https://github.com/*********/nodey434.git
- ! [remote rejected] v0.0.8 -> v0.0.8 (cannot lock ref 'refs/tags/v0.0.8': reference already exists)
-error: failed to push some refs to 'https://github.com/*********/nodey434.git': failed to run 'git push origin v0.0.8' command in directory '', output: 'To https://github.com/*********/nodey434.git
- ! [remote rejected] v0.0.8 -> v0.0.8 (cannot lock ref 'refs/tags/v0.0.8': reference already exists)
-error: failed to push some refs to 'https://github.com/*********/nodey434.git''
-error: failed to set the version on release pipelines: failed to run '/bin/sh -c ** step tag --version $(cat VERSION)' command in directory '/workspace/source', output: ''
+up to date in 0.492s
+found 0 vulnerabilities
+
+
+Showing logs for build [32mjstrachan-nodey434-master-xp5nt-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+
+> REPLACE_ME@1.0.0 test /workspace/source
+> echo "no test specified" && exit 0
+
+no test specified
+
+Showing logs for build [32mjstrachan-nodey434-master-xp5nt-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+ERROR: logging before flag.Parse: E0317 20:02:27.147387      12 metadata.go:241] Failed to unmarshal scopes: invalid character 'h' looking for beginning of value
+[36mINFO[0m[0002] Downloading base image node:9-slim           
+ERROR: logging before flag.Parse: E0317 20:02:27.156999      12 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+ERROR: logging before flag.Parse: E0317 20:02:27.324743      12 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+2020/03/17 20:02:27 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0003] Error while retrieving image from cache: getting file info: stat /workspace/sha256:0e0175bbe4f8d9d104590d8d2c591017874e30977cb71aaff1cf6fa99479575c: no such file or directory 
+[36mINFO[0m[0003] Downloading base image node:9-slim           
+2020/03/17 20:02:28 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0004] Executing 0 build triggers                   
+[36mINFO[0m[0004] cmd: EXPOSE                                  
+[36mINFO[0m[0004] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0004] Using files from context: [/workspace/source] 
+[36mINFO[0m[0004] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0004] Taking snapshot of full filesystem...        
+[36mINFO[0m[0004] ENV PORT 8080                                
+[36mINFO[0m[0004] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0004] EXPOSE 8080                                  
+[36mINFO[0m[0004] cmd: EXPOSE                                  
+[36mINFO[0m[0004] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0004] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0004] WORKDIR /usr/src/app                         
+[36mINFO[0m[0004] cmd: workdir                                 
+[36mINFO[0m[0004] Changed working directory to /usr/src/app    
+[36mINFO[0m[0004] Creating directory /usr/src/app              
+[36mINFO[0m[0004] Taking snapshot of files...                  
+[36mINFO[0m[0004] Using files from context: [/workspace/source] 
+[36mINFO[0m[0004] COPY . .                                     
+[36mINFO[0m[0004] Taking snapshot of files...                  
+[36mINFO[0m[0004] CMD ["npm", "start"]                         
+[36mINFO[0m[0004] No files changed in this command, skipping snapshotting. 
+2020/03/17 20:02:29 existing blob: sha256:e01bd28a434b56ffd2a3fe9aa99b9b69aecca69904843edd30b1ee7150d79904
+2020/03/17 20:02:29 existing blob: sha256:7d083412657baa2dafba8d093034ef26f9ed2c90fb6ed95f76bb55aff03ed429
+2020/03/17 20:02:29 existing blob: sha256:a88538b9cd05cfa611e43a25582a95ad7879f6fa708b0386a26b71ee62235bb3
+2020/03/17 20:02:29 existing blob: sha256:196b8e3c919d5639193ba6c6e54774528942041bbc37606631a2250502985c3c
+2020/03/17 20:02:29 existing blob: sha256:5bba3ecb4cd6374a19da45f2a3db0a9c0804984358b3bb4b666c28944016e5ff
+2020/03/17 20:02:32 pushed blob: sha256:c2fb55ef8855547e89687ad9d4415a5181fda5954bf32b13a196c6b490dd8bc4
+2020/03/17 20:02:33 pushed blob: sha256:1e9363ef95be46d69596f4511f36d8f9afcd21f883adafb0e0d67296ddb6842d
+2020/03/17 20:02:33 pushed blob: sha256:6a39aec2d014d65cfd3bbef3e8cf0d409b5d96bf59b8a954b5609dc152a5d29f
+2020/03/17 20:02:35 gcr.io/*********-multicluster/nodey434:0.0.8: digest: sha256:b43f341b22266f5413791d44241393ccd3b001757a1c3fe61d6e5f125f2054c7 size: 1404
+
+Showing logs for build [32mjstrachan-nodey434-master-xp5nt-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mjstrachan-nodey434-master-xp5nt-5[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source/charts/nodey434 to an unshallow repository
+Generating change log from git ref 70cfaeaf8cc348c81f5601506243fa89d08728ab => 966a0ff51407dee6d15be1957754d5de6151f47c
+Associating user x-0 in users.jenkins.io with email james.strachan@gmail.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit efb4d80adf20985ff823b3b93d382c5c3a3dfce4 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email james.strachan@gmail.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit efb4d80adf20985ff823b3b93d382c5c3a3dfce4 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Finding issues in commit messages using git format
+WARNING: No release found for *********/nodey434 and tag v0.0.8 so creating a new release
+Updated the release information at https://github.com/*********/nodey434/releases/tag/v0.0.8
+generated: /workspace/source/charts/nodey434/templates/release.yaml
+Created Release nodey434-0-0-8 resource in namespace **
+Updating PipelineActivity *********-nodey434-master-5 with version 0.0.8
+Updated PipelineActivities *********-nodey434-master-5 with release notes URL: https://github.com/*********/nodey434/releases/tag/v0.0.8
+
+Showing logs for build [32mjstrachan-nodey434-master-xp5nt-5[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: bucketrepo http://bucketrepo/bucketrepo/charts/
+Successfully added Helm repository bucketrepo.
+Uploading chart file nodey434-0.0.8.tgz to http://bucketrepo/bucketrepo/charts/api/charts
+Received 200 response: 
+
+Showing logs for build [32mjstrachan-nodey434-master-xp5nt-5[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app nodey434 version 0.0.8 to namespace **-staging
+WARNING: 
+Created Pull Request: https://github.com/*********/environment-bucketrepo-staging/pull/17
+Added label updatebot to Pull Request https://github.com/*********/environment-bucketrepo-staging/pull/17
+got git provider status pending from PR https://github.com/*********/environment-bucketrepo-staging/pull/17
+got git provider status pending from PR https://github.com/*********/environment-bucketrepo-staging/pull/17
+got git provider status pending from PR https://github.com/*********/environment-bucketrepo-staging/pull/17
+error: Pull request https://github.com/*********/environment-bucketrepo-staging/pull/17 last commit has status failure for ref 352bcc5e1b842653969e14f6a821774bba2af06c
 [31m
-Pipeline failed on stage 'meta-pipeline' : container 'step-create-tekton-crds'. The execution of the pipeline has stopped.[0m
+Pipeline failed on stage 'from-build-pack' : container 'step-promote-jx-promote'. The execution of the pipeline has stopped.[0m
